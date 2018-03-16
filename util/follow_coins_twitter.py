@@ -11,12 +11,12 @@ PATTERN = '''<a\sclass=\"twitter-timeline\" href=\"(.*)\" data-widget'''
 p = re.compile(PATTERN, re.IGNORECASE)
 
 ##############################################
-consumer_key = 'changethis'
-consumer_secret = 'changethis'
-access_token = 'changethis'
-access_token_secret = 'changethis'
+consumer_key = 't4oEoD2LWV7Kc66t14kAlmbAG'
+consumer_secret = 'LEdr1dKJYjpNEPyFP7B4wAs7uZboCJ77DcCVnkTOrNXypxC5j1'
+access_token = '2763184212-kHsrhWWKWP6kN5SVMXD6ZJ09HdSJUZx4QSuFqdR'
+access_token_secret = '8R4s2og2K07pZI5VeOCQnTYyM7WZv5iBBAY7Px1bf5pKe'
 # top 200 coins
-limit = 200
+limit = 500
 ##############################################
 
 def scrape_twitter(coin):
