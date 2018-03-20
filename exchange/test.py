@@ -2,7 +2,7 @@ from coinmarketcap import scrapeCoinCodes
 import datetime
 
 class Config:
-    sizebets = 0.005
+    sizebets = 30
     base = 'btc'
     limit = 100
 
@@ -25,7 +25,7 @@ class Okex(Config):
     def balance(self, coin):
         return 5
 
-    def buy(self, coin):
+    def buy(self, coin)
         return self.apikeys
 
 class Bittrex(Config):

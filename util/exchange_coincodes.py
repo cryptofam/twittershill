@@ -51,7 +51,7 @@ def scrape_parallel(coins, threads=8):
             result[screen_name] = frame
         else:
             print(f"don't support {screen_name} yet")
-    #result list is formatted like this now {'ethereumproject': {'BITTREX': 'BTC-ETH', 'BINANCE': 'ETH_BTC'},
+    #result list is formatted like this now {'ethereumproject': {'BITTREX': None, 'BINANCE': 'ETH_BTC'},
     return result
 
 if __name__ == '__main__':

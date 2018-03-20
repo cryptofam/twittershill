@@ -5,8 +5,9 @@ from exchange import Router
 import datetime
 from config import *
 
-wordlist = ['rebrand', 'airdrop', 'news', 'partner', 'update', 'announcement', 'fork', 'listed', 'live', 'roadmap',
-            'beta']
+wordlist = ['rebrand', 'airdrop', 'partner',  'announcement', 'fork', 'beta']
+print(f"filtering on word {' '.join(wordlist)}")
+
 
 class MyStreamListener(tweepy.StreamListener):
 
@@ -24,14 +25,9 @@ class MyStreamListener(tweepy.StreamListener):
                     for w in wordlist:
                         if w in t.lower():
                             print(f"{datetime.datetime.now().strftime('%H:%M')} found {w}")
-                    print(f"{datetime.datetime.now().strftime('%H:%M')} {screen_name.upper()}")
-                else:
-                    print(f"{datetime.datetime.now().strftime('%H:%M')} following but no keywords{screen_name} {t}")
+                    print(f"{datetime.datetime.now().strftime('%H:%M')} {screen_name.upper()}: \n{datetime.datetime.now().strftime('%H:%M')} {t} ")
                 self.b.order(screen_name)
                 print("\n")
-        else:
-            print(f"{datetime.datetime.now().strftime('%H:%M')} received uninteresting tweet from {screen_name}")
-
 
     def on_error(self, status_code):
         if status_code == 420:
