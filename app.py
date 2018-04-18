@@ -49,7 +49,6 @@ def checkTweetCriteria(tweet):
     finally:
         return True
 
-
 class MyStreamListener(tweepy.StreamListener):
     def on_status(self, tweet):
         if checkTweetCriteria(tweet):
