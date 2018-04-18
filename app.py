@@ -57,9 +57,6 @@ class MyStreamListener(tweepy.StreamListener):
 
     def on_error(self, status_code):
         raise AttributeError(f"error status code {status_code}")
-
-
-
         
 if __name__ == '__main__':
     while True:
