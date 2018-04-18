@@ -1,4 +1,5 @@
-# twitterbot
+# twitterbot for python 3.6
 
-In the util directory there's a script that scraps coinmarketcap.com for coins and follows  each coin on twitter. 
-Use this to populate a twitter account to stream the timeline of.
+- vul de bovenste rijen variabelen in
+- installeer de tweepy library met pip install tweepy
+- start met python app.py
